@@ -21,7 +21,7 @@ const baseUrl = `https://github.com/K-tecchan/${pkg.name}/blob/main/src/content/
 const { frontmatter, id } = Astro.props;
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description}>
+<Layout title={`${frontmatter.title} - KameWalk`} description={frontmatter.description}>
   <main>
     <h1 class="post-title">{frontmatter.title}</h1>
     <div class="meta">

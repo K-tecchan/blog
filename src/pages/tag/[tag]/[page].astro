@@ -33,7 +33,7 @@ const { page } = Astro.props;
 const tagName = slugNameMapper[tag as SlugType];
 ---
 
-<Layout title={`KameWalk / #${tagName}-${page.currentPage}`}>
+<Layout title={`#${tagName}-${page.currentPage} - KameWalk`}>
   <main>
     <h1>#{tagName} がついた記事</h1>
     <Posts posts={page.data} />
